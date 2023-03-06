@@ -17,14 +17,10 @@ class Parser
     {
         $this->filename = $filename;
         if (! file_exists($filename)) {
-            throw new InvalidArgumentException(
-                sprintf('%s is not available', $filename)
-            );
+            throw new InvalidArgumentException("{$filename} is not available");
         }
         if (! is_readable($filename)) {
-            throw new InvalidArgumentException(
-                sprintf('%s cannot be read', $filename)
-            );
+            throw new InvalidArgumentException("{$filename} cannot be read");
         }
     }
 
@@ -47,7 +43,7 @@ class Parser
         $content[$key] = $value;
         $fh = fopen($this->filename, 'w');
         foreach ($content as $key => $value) {
-            fwrite($fh, sprintf("%s=%s\n", $key, $value));
+            fwrite($fh, "{$key}={$value}\n");
         }
         fclose($fh);
     }
