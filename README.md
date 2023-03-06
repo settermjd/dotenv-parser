@@ -1,5 +1,7 @@
 # DotEnv Parser
 
+![testing workflow](https://github.com/settermjd/dotenv-parser/actions/workflows/test-code.yml/badge.svg)
+
 This is a small package that can parse and work with [dotenv files](https://hexdocs.pm/dotenvy/dotenv-file-format.html).
 It's quite new and likely needs quite a bit of work, but it's a start.
 
