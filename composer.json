@@ -27,7 +27,8 @@
     "mikey179/vfsstream": "^v1.6.11",
     "phpunit/phpunit": "^7.5.20 || ^8.5.2 || ^9.0.1",
     "roave/security-advisories": "dev-master",
-    "squizlabs/php_codesniffer": "*"
+    "squizlabs/php_codesniffer": "*",
+    "vimeo/psalm": "^5.7"
   },
   "scripts": {
     "test": "phpunit --colors=always"
