@@ -1,0 +1,35 @@
+{
+  "name": "settermjd/dotenv_parser",
+  "description": "This package can read a dotenv (.env) file into memory and create one from an associative array.",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "dotenv",
+    ".env"
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "DotEnvParser\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DotEnvParserTest\\": "test/"
+    }
+  },
+  "require": {
+    "php": "^7.4 || ^8.0"
+  },
+  "require-dev": {
+    "mikey179/vfsstream": "^v1.6.11",
+    "phpunit/phpunit": "^7.5.20 || ^8.5.2 || ^9.0.1",
+    "roave/security-advisories": "dev-master",
+    "squizlabs/php_codesniffer": "*"
+  },
+  "scripts": {
+    "test": "phpunit --colors=always"
+  }
+}
