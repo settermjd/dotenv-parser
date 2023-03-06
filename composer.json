@@ -31,6 +31,13 @@
     "vimeo/psalm": "^5.7"
   },
   "scripts": {
+    "check": [
+      "@cs-check",
+      "@test"
+    ],
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "static-analysis": "psalm --shepherd --stats",
     "test": "phpunit --colors=always"
   }
 }
